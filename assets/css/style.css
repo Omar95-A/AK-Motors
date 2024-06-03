@@ -193,3 +193,13 @@ img.feat-icon {
     width: 150px;
 }
 
+.akFeaturette1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-1 {
+    width: 100%;
+    border-radius: 30px;
+}
