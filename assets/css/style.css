@@ -144,7 +144,6 @@ main {
     clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
 }
 
-
 .carousel-caption h1 , .carousel-caption p {
     text-shadow: 3px 0px 2px #000;
 }
@@ -153,6 +152,7 @@ main {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+
 .carousel-caption a:hover {
     background-color: var(--main-hov-color);
     border-color: var(--main-hov-color);
@@ -165,3 +165,31 @@ main {
 .carousel-caption p {
     margin-top: 20px;
 }
+
+img.feat-icon {
+    background-color: #ce1419e0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.ak-para {
+    font-size: 17px;
+    color: #777;
+}
+
+.features img.logo {
+    width: 140px;
+}
+
+.features img {
+    width: 75px;
+}
+
+.features svg {
+    width: 30px;
+}
+
+.features .features-logo {
+    width: 150px;
+}
+
