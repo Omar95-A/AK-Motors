@@ -1,5 +1,4 @@
 
-
 :root {
     --main-color: #ce1419;
     --main-hov-color: #a90e12;
@@ -20,7 +19,6 @@ body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-
 
 .navbar {
     position: absolute;
@@ -43,14 +41,8 @@ body {
     justify-content: space-between;
 }
 
-/* .collapse.navbar-collapse {
-    width: 55%;
-} */
-
 .navbar .navbar-brand img {
     width: 65px;
-    /* width: 119px;
-    height: 87.609px; */
 }
 
 .navbar-collapse {
@@ -91,8 +83,85 @@ body {
     border-color: transparent;
 }
 
-
 .bg-dark {
     background-color: transparent !important;
 }
 
+main {
+    /* position: absolute; */
+    top: 0;
+    /* left: 0; */
+}
+
+.carousel {
+    height: 100vh;
+    margin-bottom: 0px !important;
+}
+
+.carousel .carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-position: top right;
+    object-position: top right;
+}
+
+.carousel .carousel-item img.darkImg {
+    filter:brightness(75%)
+}
+
+.carousel-item {
+    height: 100vh !important;
+    /* width: 98vw; */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 6%;
+}
+
+.carousel-item:nth-child(2) .carousel-caption {
+    width: 45% !important;
+    bottom: 150px !important;
+    left: 70px !important;
+}
+
+.carousel-item:nth-child(1) .carousel-caption,
+.carousel-item:nth-child(3) .carousel-caption {
+    width: 40% !important;
+    bottom: 150px !important;
+    left: unset !important;
+    right: 60px !important;
+}
+
+.carousel-item .carousel-caption.aboutUs {
+    width: 90% !important;
+    bottom: 275px !important;
+}
+
+.carousel-item.aboutUs {
+    clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+}
+
+
+.carousel-caption h1 , .carousel-caption p {
+    text-shadow: 3px 0px 2px #000;
+}
+
+.carousel-caption a {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.carousel-caption a:hover {
+    background-color: var(--main-hov-color);
+    border-color: var(--main-hov-color);
+}
+
+.carousel-caption h1,p {
+    color: white;
+}
+
+.carousel-caption p {
+    margin-top: 20px;
+}
