@@ -400,3 +400,19 @@ img.feat-icon {
     }
 
 }
+
+.twoImgDiv {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.twoImg:nth-child(1) {
+    width: 100%;
+}
+
+.twoImg:nth-child(2) {
+    width: 200px;
+}
