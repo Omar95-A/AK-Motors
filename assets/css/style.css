@@ -273,27 +273,27 @@ img.feat-icon {
     overflow: hidden;
     position: relative;
     z-index: 2;
-  }
+}
 
-  .marquee:before,
-  .marquee:after {
+.marquee:before,
+.marquee:after {
     position: absolute;
     top: 0;
     width: 10rem;
     height: 100%;
     content: "";
     z-index: 1;
-  }
+}
 
-  .marquee:before {
+.marquee:before {
     left: 0;
     background: linear-gradient(to right, #111 0%, transparent 100%);
-  }
+}
 
-  .marquee:after {
+.marquee:after {
     right: 0;
     background: linear-gradient(to left, #111 0%, transparent 100%);
-  }
+}
 
   .marquee-content {
     list-style: none;
@@ -310,3 +310,51 @@ img.feat-icon {
       transform: translateX(0);
     }
   }
+
+.marquee-content li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4);
+  white-space: nowrap;
+  position: relative;
+}
+ 
+.marquee-content li h2 {
+  color: #000;
+  transition: 0.8s;
+}
+ 
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  transition: 0.8s;
+  filter: brightness(0%)
+}
+ 
+.marquee-content li::before {
+    content: "Türü keşfedin";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px auto;
+    bottom: 60px;
+    background-color: var(--main-color);
+    transition: 0.3s;
+    opacity: 0;
+}
+  
+.marquee-content li::after {
+    content: "";
+    position: absolute;
+    font-size: 30px;
+    margin: 0px auto;
+    top: 0;
+    font-weight: bold;
+    color: red;
+}
