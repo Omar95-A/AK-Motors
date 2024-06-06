@@ -195,7 +195,7 @@ img.feat-icon {
     width: 30px;
 }
 
-.features .features-logo {
+img.features-logo {
     width: 150px;
 }
 
@@ -421,6 +421,7 @@ img.feat-icon {
     display: flex;
     justify-content: space-between;
 }
+
 .featCards {
     display: flex;
     flex-direction: column;
