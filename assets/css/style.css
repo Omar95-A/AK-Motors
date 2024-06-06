@@ -416,3 +416,30 @@ img.feat-icon {
 .twoImg:nth-child(2) {
     width: 200px;
 }
+
+.featurette {
+    display: flex;
+    justify-content: space-between;
+}
+.featCards {
+    display: flex;
+    flex-direction: column;
+}
+.featCards .featCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featCards .featCard .icon {
+    margin-right: 20px;
+}
+
+.featCards .featCard .icon img {
+    width: 50px;
+}
+
+.featCards .featCard .info h5 {
+    font-size: 20px;
+}
