@@ -294,3 +294,19 @@ img.feat-icon {
     right: 0;
     background: linear-gradient(to left, #111 0%, transparent 100%);
   }
+
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
