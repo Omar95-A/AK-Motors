@@ -518,3 +518,42 @@ img.features-logo {
 .brands img.kuba {
     width: 90px;
 }
+
+.footer {
+    background-color: var(--main-dark-color);
+}
+
+img.logo {
+    width: 130px;
+}
+
+.footer ul.social-media li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.footer a {
+    color: #ffffff80;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: var(--main-hov-color);
+}
+
+.footer i {
+    font-size: 20px;
+}
+
+.footer .inform i {
+    margin-right: 10px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright p {
+    padding-top: 3rem;
+    margin-bottom: 0px;
+}
